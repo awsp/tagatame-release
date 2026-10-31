@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover" />
+    <title>誰ガ為の王女戦記</title>
+    <meta name="theme-color" content="#fde4ef" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="誰ガ為の王女戦記" />
+    <link rel="apple-touch-icon" href="/tagatame-release/icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Shippori+Mincho:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <!-- comic lettering for the critical-hit burst (only the characters it uses) -->
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&text=%E3%82%AF%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%EF%BC%81%E6%9C%83%E5%BF%83%E4%B8%80%E6%93%8A&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/tagatame-release/assets/index-C2LVFHZn.js"></script>
+    <link rel="modulepreload" crossorigin href="/tagatame-release/assets/three-DUjenBFE.js">
+    <link rel="stylesheet" crossorigin href="/tagatame-release/assets/index-zcsZ6Yt6.css">
+  <link rel="manifest" href="/tagatame-release/manifest.webmanifest"></head>
+  <body>
+    <div id="app">
+      <div id="stage"></div>
+      <div id="overlay"></div>
+      <header id="topbar">
+        <div class="brand glass">
+          <span id="gameTitle" class="title"></span>
+          <span id="objective" class="objective"></span>
+        </div>
+        <div class="status glass">
+          <span id="turnInfo" class="turn"></span>
+          <span id="phaseInfo" class="phase"></span>
+          <span id="weatherInfo" class="weather"></span>
+        </div>
+        <span class="spacer"></span>
+        <div class="tools glass">
+          <button data-rot="-1" class="icon" title="Q" aria-label="⟲"><svg class="rot-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12a6.5 6.5 0 1 0 2.2-4.9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M3.5 4v5h5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button data-rot="1" class="icon" title="E" aria-label="⟳"><svg class="rot-ic" viewBox="0 0 24 24" aria-hidden="true" style="transform:scaleX(-1)"><path d="M5.5 12a6.5 6.5 0 1 0 2.2-4.9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M3.5 4v5h5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button id="threatBtn" class="icon" title="T">◈</button>
+          <button id="muteBtn" class="icon" title="BGM / SE">♪</button>
+          <select id="langSel"></select>
+          <span class="gm-wrap">
+            <button id="gameMenuBtn" class="ghost" aria-haspopup="menu"></button>
+            <div id="gameMenu" class="glass" role="menu">
+              <button id="saveBtn" role="menuitem"></button>
+              <button id="loadBtn" role="menuitem"></button>
+              <button id="restartBtn" role="menuitem"></button>
+              <button id="libraryBtn" role="menuitem"></button>
+              <button id="titleBtn" role="menuitem"></button>
+              <button id="cheatBtn" role="menuitem" hidden></button>
+            </div>
+          </span>
+          <button id="settingsBtn" class="ghost"></button>
+        </div>
+        <button id="endPhase" class="primary"></button>
+        <button id="toolsBtn" class="icon glass" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="5" cy="12" r="2.2" fill="currentColor"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/><circle cx="19" cy="12" r="2.2" fill="currentColor"/></svg></button>
+      </header>
+
+      <aside id="unitPanel" class="panel hidden"></aside>
+      <div id="tilePanel" class="panel tile"></div>
+      <div id="forecast" class="panel"></div>
+      <nav id="menu" class="panel"></nav>
+      <div id="hint"></div>
+      <div id="log" class="panel"></div>
+      <div id="help"></div>
+      <div id="banner"></div>
+      <div id="modal"></div>
+    </div>
+  </body>
+</html>
