@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="誰ガ為の王女戦記" />
-    <link rel="apple-touch-icon" href="/tagatame-release/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/game-releases/tagatame-demo/icons/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,10 +17,10 @@
     />
     <!-- comic lettering for the critical-hit burst (only the characters it uses) -->
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&text=%E3%82%AF%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%EF%BC%81%E6%9C%83%E5%BF%83%E4%B8%80%E6%93%8A&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/tagatame-release/assets/index-C2LVFHZn.js"></script>
-    <link rel="modulepreload" crossorigin href="/tagatame-release/assets/three-DUjenBFE.js">
-    <link rel="stylesheet" crossorigin href="/tagatame-release/assets/index-zcsZ6Yt6.css">
-  <link rel="manifest" href="/tagatame-release/manifest.webmanifest"></head>
+    <script type="module" crossorigin src="/game-releases/tagatame-demo/assets/index-vbsCO8IS.js"></script>
+    <link rel="modulepreload" crossorigin href="/game-releases/tagatame-demo/assets/three-DUjenBFE.js">
+    <link rel="stylesheet" crossorigin href="/game-releases/tagatame-demo/assets/index-muKHikzm.css">
+  <link rel="manifest" href="/game-releases/tagatame-demo/manifest.webmanifest"></head>
   <body>
     <div id="app">
       <div id="stage"></div>
@@ -28,10 +28,9 @@
       <header id="topbar">
         <div class="brand glass">
           <span id="gameTitle" class="title"></span>
-          <span id="objective" class="objective"></span>
         </div>
         <div class="status glass">
-          <span id="turnInfo" class="turn"></span>
+          <span id="turnInfo" class="turn" role="button" tabindex="0"></span>
           <span id="phaseInfo" class="phase"></span>
           <span id="weatherInfo" class="weather"></span>
         </div>
@@ -55,6 +54,7 @@
           </span>
           <button id="settingsBtn" class="ghost"></button>
         </div>
+        <div id="autoBar" class="glass" hidden><button id="autoBtn"></button><button id="speedBtn"></button></div>
         <button id="endPhase" class="primary"></button>
         <button id="toolsBtn" class="icon glass" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="5" cy="12" r="2.2" fill="currentColor"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/><circle cx="19" cy="12" r="2.2" fill="currentColor"/></svg></button>
       </header>
