@@ -1,0 +1,15 @@
+{
+  "hash": "1q0oi0b",
+  "size": 384,
+  "layers": [
+    "grass",
+    "path",
+    "sand",
+    "slabs",
+    "flags",
+    "bank",
+    "crag",
+    "snow",
+    "iceSlabs"
+  ]
+}
